@@ -8,6 +8,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { BillComponent } from './bill/bill.component';
 import { PaymentComponent } from './payment/payment.component';
 import { CreditComponent } from './credit/credit.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
     path: 'credit',
     component: CreditComponent
   },
+  {
+    path: 'thanks',
+    component: ThanksComponent
+  },
 ];
 
 @NgModule({
@@ -34,7 +39,8 @@ const routes: Routes = [
     LandingComponent,
     BillComponent,
     PaymentComponent,
-    CreditComponent
+    CreditComponent,
+    ThanksComponent
   ],
   imports: [
     BrowserModule,

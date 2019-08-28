@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 export interface Credit {
   name: string;
@@ -17,10 +18,21 @@ export interface Credit {
 })
 
 export class CreditComponent implements OnInit {
-
-  constructor() { }
+  details: Credit = {
+    name: '',
+    id: '',
+    email: '',
+    cardNumber: '',
+    exp: '',
+    cvv: '',
+  };
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  redirectToThanksPage() {
+    this.router.navigate(['/thanks']);
   }
 
 }

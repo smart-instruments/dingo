@@ -1,3 +1,51 @@
-<p>
-  credit works!
-</p>
+<div class="register-container" style="direction: rtl;">
+  <br>
+  <div class="container" style="direction: rtl;">
+    <div class="row" style="direction: rtl;">
+      <div class="col-md-6" style="direction: rtl;">
+        <h3 style="direction: rtl; margin:0 auto; display: table-row-group;">פרטי איש קשר</h3>
+        <!--<p class="lead">Already a member? Please <a routerLink="/login">log in</a> instead.</p>-->
+        <br>
+
+        <form (submit)="redirectToThanksPage()">
+          <div class="form-group"  style="direction: rtl;">
+            <label for="name" class="register-titles" style="display: table-row-group;">שם בעל הכרטיס</label>
+            <input type="text" class="form-control" name="name" placeholder="שם מלא">
+          </div>
+
+          <div class="form-group"  style="direction: rtl;">
+            <label for="name" class="register-titles" style="display: table-row-group;">ת.ז של בעל הכרטיס</label>
+            <input type="text" class="form-control" name="name" placeholder="תעודת זהות">
+          </div>
+
+          <div class="form-group"  style="direction: rtl;">
+            <label for="name" class="register-titles" style="display: table-row-group;">מייל בעל הכרטיס</label>
+            <input type="text" class="form-control" name="name" placeholder="כתובת מייל">
+          </div>
+
+          <h3 style="direction: rtl; margin:0 auto; display: table-row-group;">פרטי כרטיס אשראי</h3>
+
+          <br>
+
+          <div class="form-group"  style="direction: rtl;">
+            <label for="name" class="register-titles" style="display: table-row-group;">מספר כרטיס</label>
+            <input type="text" class="form-control" name="name" placeholder="xxxx-xxxx-xxxx-xxxx">
+          </div>
+
+          <div class="form-group"  style="direction: rtl;">
+            <label for="name" class="register-titles" style="display: table-row-group;">תוקף</label>
+            <input type="text" class="form-control" name="name" placeholder="MM/YY">
+          </div>
+
+          <div class="form-group"  style="direction: rtl;">
+            <label for="name" class="register-titles" style="display: table-row-group;">CVV</label>
+            <input type="text" class="form-control" name="name" placeholder="ספרות בגב הכרטיס">
+          </div>
+        </form>
+
+        <button id="payment-button" type="button" class="btn btn-success"
+                (click)="redirectToThanksPage()">אישור</button>
+    </div>
+  </div>
+</div>
+</div>
