@@ -2,21 +2,16 @@
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 50%;
+  width: 75%;
   direction: rtl;
   text-align: center;
   margin: 0 auto;
 }
 
-
-#payment-button {
-  margin-right: 150px;
-}
-
 #credit, #colu, #pepper, #bit {
   width: 125px;
   height: 80px;
-  margin: 0 auto;
+  margin: 5px 50px;
 }
 .col-md {
   padding: 25px;
@@ -47,5 +42,5 @@
 }
 
 #payment-button {
-  margin: 27px 407px;
+  margin-left: 150px;
 }
